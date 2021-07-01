@@ -1,0 +1,7 @@
+sonata_admin:
+    templates:
+        dashboard: '@SonataAdmin/Core/dashboard.html.twig'
+    title: false
+    assets:
+        extra_javascripts: 
+            - admin/js/pixsortablebehavior/init.js
