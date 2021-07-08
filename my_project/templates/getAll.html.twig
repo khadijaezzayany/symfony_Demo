@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+
+
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">|#####|</th>
+            <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for client in clients%}
+            <tr>
+            <td>{{client.name}}</td>
+            <th scope="row">|</th>
+            <td>{{client.email}}</td>
+            </tr>
+            {%else%}
+            <tr>
+            <td> No Records Found!</td>
+            </tr>
+            {% endfor%}
+        </tbody>
+        </table>
+
+{% endblock %}
+
