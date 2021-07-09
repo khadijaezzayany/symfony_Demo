@@ -65,7 +65,7 @@ protected function configureDefaultSortValues(array &$sortValues): void
             // ->add('id')
             ->add('name')
             ->add('email')
-            ->add('position')
+            // ->add('position')
             ;
     }
 
